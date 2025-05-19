@@ -10,7 +10,7 @@ struct Process {
     int tat;
     int wt;
     int remaining_bt;
-    int priority;   // Set to -1 when not used
+    int priority;  
     int completed;
 };
 
@@ -106,7 +106,7 @@ void roundRobin(struct Process *proc[], int n, int quantum) {
     }
 }
 
-// Priority Scheduling - Non-Preemptive
+// Priority Scheduling - Non Preemptive
 void priorityNonPreemptive(struct Process *proc[], int n) {
     int time = 0, completed = 0;
 
